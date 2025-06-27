@@ -25,11 +25,12 @@ header {
 
 /* スライドショー */
 .slideshow-container {
-  position: relative;
-  max-width: 100%;
-  height: 400px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 960px; /* 好きな横幅上限に調整可 */
   margin: auto;
   overflow: hidden;
+  position: relative;
 }
 .slides {
   display: none;
