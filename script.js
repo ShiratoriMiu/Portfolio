@@ -10,7 +10,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) { slideIndex = 1 }    
   slides[slideIndex - 1].style.display = "block";  
-  setTimeout(showSlides, 5000); // 5秒ごとに切り替え
+  setTimeout(showSlides, 10000); // 10秒ごとに切り替え
 }
 
 function plusSlides(n) {

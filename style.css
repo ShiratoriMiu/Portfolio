@@ -27,7 +27,7 @@ header {
 .slideshow-container {
   aspect-ratio: 16 / 9;
   width: 100%;
-  max-width: 960px; /* 好きな横幅上限に調整可 */
+  max-width: 1920px; /* 好きな横幅上限に調整可 */
   margin: auto;
   overflow: hidden;
   position: relative;
