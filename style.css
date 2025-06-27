@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: #fff;
+}
+
+/* ヘッダーとボタン */
+header {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.about-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* スライドショー */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+.slides {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 2em;
+  padding: 16px;
+  user-select: none;
+  transform: translateY(-50%);
+}
+.prev { left: 0; }
+.next { right: 0; }
+.fade {
+  animation: fade 1.5s ease-in-out;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* 作品カード */
+.works {
+  padding: 40px 20px;
+  text-align: center;
+}
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  background: #fff;
+  color: #000;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  text-align: center;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card a {
+  display: block;
+  padding: 15px;
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}

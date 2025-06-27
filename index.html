@@ -7,18 +7,35 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- 右上の自己紹介ボタン -->
   <header>
     <h1>白鳥 美羽のポートフォリオ</h1>
+    <button class="about-button" onclick="location.href='about.html'">自己紹介</button>
   </header>
 
-  <section>
-    <h2>制作物</h2>
-    <p>以下のリンクからWebGLゲームが遊べます。</p>
-    <ul>
-      <li><a href="works/CanddyPuzzle/index.html" target="_blank">▶ パズルゲーム「きゃんでぃぱずる」</a></li>
-    </ul>
+  <!-- スライドショー -->
+  <section class="slideshow-container">
+    <div class="slides fade"><img src="images/slide1.jpg" alt="slide1" /></div>
+    <div class="slides fade"><img src="images/slide2.jpg" alt="slide2" /></div>
+    <div class="slides fade"><img src="images/slide3.jpg" alt="slide3" /></div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </section>
 
+  <!-- 作品一覧 -->
+  <section class="works">
+    <h2>制作物</h2>
+    <p>以下のリンクからWebGLゲームが遊べます。</p>
+    <div class="grid">
+      <div class="card">
+        <img src="images/game1.jpg" alt="きゃんでぃぱずる" />
+        <a href="works/CanddyPuzzle/index.html" target="_blank">▶ きゃんでぃぱずる</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせ -->
   <section id="contact">
     <h2>お問い合わせ</h2>
     <p>メール: example@example.com</p>
@@ -27,5 +44,7 @@
   <footer>
     <p>&copy; 2025 白鳥 美羽</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
